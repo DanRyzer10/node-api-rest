@@ -9,6 +9,9 @@ export const  getAllUsers = async(req:express.Request,res:express.Response) =>{
         res.status(500).send(err.message)
     }
 }
+export const sayHello = async(req:express.Request,res:express.Response) =>{
+    res.status(200).send('Hello World')
+}
 
 export const deleteUser = async(req:express.Request,res:express.Response)  =>{
     try{
